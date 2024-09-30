@@ -1,0 +1,12 @@
+patterns:
+  - pattern : |
+      $<URL>
+    filters:
+      - variable: URL
+        regex: ^(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$
+languages:
+  - javascript
+severity: high
+metadata:
+  id: no_absolute_url_rule
+  description: "No absolute URLS can exist in the bundle."

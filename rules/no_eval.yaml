@@ -1,0 +1,12 @@
+patterns:
+  - pattern : |
+      eval($<COMMAND>)
+    filters:
+      - variable: COMMAND
+        regex: (.+)
+languages:
+  - javascript
+severity: high
+metadata:
+  id: no_eval_in_code
+  description: "No evals in the bundle."
